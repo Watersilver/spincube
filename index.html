@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Spincube</title>
+  </head>
+  <body>
+    <section id="width-ruler">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <section id="world">
+      <section class="world-3d">
+        <section id="main-cuboid" class="shape cuboid" style="--width: 130px; --height: 130px; --depth: 130px">
+          <section class="position" style="transform: translate3d(0, 0, var(--m-half-depth))">
+            <section class="rotation">
+              <section class="face front"><section class="face-content"></section></section>
+              <section class="face right"><section class="face-content"></section></section>
+              <section class="face back"><section class="face-content"></section></section>
+              <section class="face left"><section class="face-content"></section></section>
+              <section class="face top"><section class="face-content"></section></section>
+              <section class="face bottom"><section class="face-content"></section></section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Import libs -->
+    <!-- https://github.com/infusion/Quaternion.js/ -->
+    <script src="./Quaternion.js/quaternion.js"></script>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
