@@ -53,15 +53,13 @@ ready().then(() => {
     }
   });
 
-  let animBefore = performance.now();
-  const animation = (now: number) => {
+  const animation = () => {
     const rotationAxis = [...mouseRotationAxis, 0];
 
     const newQ = new window.Quaternion.fromAxisAngle(rotationAxis, angularVel);
     rot.q = rot.q.mul(newQ);
     rot.elem.style.transform = "matrix3d(" + rot.q.toMatrix4() + ")";
 
-    animBefore = now;
     requestAnimationFrame(animation);
   };
   requestAnimationFrame(animation);
