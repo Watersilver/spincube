@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 /* debug ruler */
 /* #width-ruler {
   position: absolute;
@@ -42,6 +45,10 @@
 #width-ruler>*:nth-child(10) {
   left: 95vw;
 } */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
 #world {
   background: gray;
@@ -142,4 +149,17 @@
 .face-content {
   width: 100%;
   height: 100%;
+}
+
+
+#instructions {
+  position: absolute;
+  background-color: maroon;
+  color: white;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  border-bottom-right-radius: 8px;
+
+  pointer-events: none;
 }
